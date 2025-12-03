@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+    <div class="content">
+        <div class="content-text b1">
+            <h3><%= title %></h3>
+            <p><%= content %></p>
+        </div>
+        <div class="text-center">
+            <form action="/delete" method="post">
+                <input type="text" name="postId" hidden value="<%= postId %>">
+                <input class="btn" type="submit" name="delete" value="Delete">
+            </form>
+            <a  href="/edit/<%= postId %>"><input class="btn" type="button" value="Edit"></a>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

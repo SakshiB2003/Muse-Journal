@@ -1,0 +1,64 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container blog">
+
+   <div class="content-text">
+             <div class="main">
+                <% if (posts.length === 0) { %>
+                <div class="text-center">
+                    <h3>Add some posts 😊...</h3>
+                </div>
+            <% } else { %>
+
+                <div class="data">
+                    <ul>
+                        <% posts.forEach((post, idx) => { %>
+                            <li>
+                                <a href="/view/<%= idx %>">
+                                    <h3><%= post.title %></h3>
+                                </a>
+                                <p><%= post.content %></p>
+                                <hr>
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+
+            <% } %>
+        </div>
+
+
+        <div class="aside">
+        
+            <div class="text-center">
+                <a class="btn" href="/create">Create</a>
+            </div>
+
+            <% if (posts.length === 0) { %>
+
+                <h3>No post yet....</h3>
+
+            <% } else { %>
+
+                <div class="px-1">
+                    <p>RECENT POSTS</p>
+                    <ul>
+                        <% posts.forEach((post, idx) => { %>
+                            <li>
+                                <a href="/view/<%= idx %>">
+                                    <h6><%= post.title %></h6>
+                                </a>
+                                <hr>
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+
+            <% } %>
+
+        </div>
+   </div>
+
+</div>
+
+<%- include("partials/footer.ejs") %>
