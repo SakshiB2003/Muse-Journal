@@ -7,7 +7,7 @@ dynamic routing using Express.
 ---
 
 ## 🚀 Deploy on Render  
-(https://muse-journal.onrender.com/)
+[![Deploy with Render]](https://muse-journal.onrender.com/)
 
 ---
 
