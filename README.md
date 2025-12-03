@@ -28,5 +28,3 @@ dynamic routing using Express.
 
 ---
 
-## 📁 Folder Structure
-
