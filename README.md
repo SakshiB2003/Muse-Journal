@@ -1,6 +1,4 @@
-# Muse-Journal
-
-# Simple Blog Website (Node.js + Express + EJS)
+# Muse-Journal (Node.js + Express + EJS)
 
 This is a simple blogging web application built using **Node.js**, **Express.js**, and **EJS**.  
 Users can create, view, and manage blog posts. The UI is styled with custom CSS and supports
