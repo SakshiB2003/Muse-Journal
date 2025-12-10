@@ -7,7 +7,8 @@ dynamic routing using Express.
 ---
 
 ## 🚀 Deploy on Render  
-[![Deploy with Render]](https://muse-journal.onrender.com/)
+[![Live on Render](https://img.shields.io/badge/Live%20Demo-Render-blue?logo=render)](https://muse-journal.onrender.com/)
+
 
 ---
 
